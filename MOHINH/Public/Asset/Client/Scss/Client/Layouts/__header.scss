@@ -1,0 +1,220 @@
+.logo {
+   //  max-height: 10rem;
+   max-width: 100%;
+
+   img {
+      width: 100%;
+   }
+}
+
+header {
+   width: 100%;
+   background: var(--black-opacity-80);
+   padding: .5% 0;
+   position: fixed;
+   top: 0;
+   z-index: 1000;
+
+   .menu {
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      @include list-menu(var(--white));
+
+   }
+
+   //-----------menu item----------------
+   .menu-item {
+      display: flex;
+      margin: 0;
+      padding: 0;
+
+      ul>li {
+         position: relative;
+      }
+
+      ul>li:last-child {
+         border: 1.5px solid var(--white);
+         border-radius: 30px;
+      }
+
+      ul>li:nth-child(5) {
+         padding: 0;
+         margin: 0;
+      }
+
+      ul>li:hover {
+         @include list-menu(var(--primary-color));
+
+         .number-shopping {
+            color: var(--white);
+         }
+      }
+
+      ul>li:hover a,
+      ul>li:visited a {
+         text-shadow: 0px 0px 15px rgba(175.88743954896927, 22.60592557489872, 248.01998734474182, 1);
+         color: rgba(154.9561259150505, 33.57853978872299, 212.07499533891678, 1);
+      }
+
+      .card-shopping {
+         img {
+            width: 45%;
+            height: auto;
+         }
+
+         span {
+            background-color: var(--primary-color);
+            padding: 0 .2rem;
+            border-radius: 50%;
+         }
+      }
+
+      //------------dropdown-------------------
+
+      .dropdown {
+         opacity: 0;
+         visibility: hidden;
+         transition: opacity 0.3s ease-in-out;
+         position: absolute;
+      }
+   }
+}
+
+//~~~~~~~~NAV~~~~~~~~~
+//-----------backgroud------------
+.banner_index {
+   position: relative;
+   margin-left: 10%;
+   height: 90vh;
+   width: 90%;
+   background: url(/Public/Image/Index/Ellipse.png) no-repeat left bottom 5%,
+      url(/Public/Image/Index/Ellipse.png) no-repeat left 15% center,
+      url(/Public/Image/Index/Ellipse-inline.png) no-repeat right 65% bottom 30%,
+      url(/Public/Image/Index/Ellipse-inline.png) no-repeat top 10% right 35%,
+      url(/Public/Image/Index/Ellipse.png) no-repeat top 26% center,
+      url(/Public/Image/Index/Ellipse.png) no-repeat right 5%,
+      url(/Public/Image/Index/Ellipse.png) no-repeat right 40% bottom 30%;
+   background-size: 4%, 4.5%, 4.5%, 3%, 2%, 5%, 4%;
+
+   .elip {
+      position: absolute;
+      right: 1%;
+      background: url(/Public/Image/Index/blob-haikei.png);
+      background-position: right center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      bottom: 0;
+      width: 40em;
+      height: 40em;
+      box-sizing: 2px solid red;
+      background-blend-mode: multiply;
+
+      .img_slide {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 80%;
+         height: 100%;
+         background-size: cover;
+         transition: background-image 3s ease-in-out;
+         transform: translateZ(10px); // dùng lại nếu tạo hiệu ứng
+      }
+   }
+
+   .box_text_banner {
+      height: 100%;
+      margin-top: 10%;
+
+      .box_text {
+         line-height: 0.5;
+
+         .text_span {
+            color: var(--gray-opacity-80);
+            font-size: 1.5rem;
+         }
+      }
+
+      h1 {
+         font-size: 3rem;
+         font-weight: 900;
+      }
+
+
+      button {
+         @include button(transparent);
+
+      }
+
+      button:hover {
+         background-color: var(--primary-color);
+         box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+            25px -10px 30px -5px rgba(255, 0, 212, 0.5),
+            25px 10px 30px -5px rgba(162, 0, 255, 0.5),
+            -25px 10px 30px -5px rgba(153, 0, 255, 0.5);
+
+      }
+
+      .text_banner {
+         color: var(--white);
+         //  white-space: break-spaces;
+         width: 38rem;
+         font-family: Open Sans Hebrew;
+
+         &_color {
+            color: var(--primary-color);
+         }
+      }
+
+      .text_span {
+         color: rgba(193.3617290854454, 193.3617290854454, 193.3617290854454, 1);
+         width: 560px;
+         height: 40px;
+         font-family: Microsoft YaHei;
+         text-align: left;
+         font-size: 30px;
+         letter-spacing: 0;
+      }
+   }
+
+   //-----------CLOCK------------
+
+   .timeStyle {
+      padding-top: 1%;
+      color: var(--white);
+      font-size: 6.5rem;
+      letter-spacing: 1.5rem;
+      // font-family: "Orbitron", sans-serif;
+      font-family: "Barlow", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+   }
+
+   //-----------DANH GIA------------
+   .view_analytics {
+      display: flex;
+      color: var(--white);
+
+      &_box {
+         background: var(--black-opacity-30);
+         width: 10rem;
+         padding: 0.5% 1.2%;
+         text-align: center;
+         border: 1px solid var(--white-opacity-30);
+         border-radius: 10px;
+         margin-right: 1%;
+         line-height: 2.3rem;
+
+         &_number {
+            font-size: 1.7rem;
+         }
+
+         &_title {
+            font-size: 1.2rem;
+            color: var(--gray-opacity-80);
+         }
+      }
+   }
+}

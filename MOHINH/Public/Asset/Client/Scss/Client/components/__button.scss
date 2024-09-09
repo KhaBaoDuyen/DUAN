@@ -1,0 +1,76 @@
+.btn_slide {
+   background: none;
+   border: 2px solid var(--white);
+   border-radius: 5px;
+   transition: .4s;
+   margin: 0 0.3rem;
+
+   span {
+      color: var(--white);
+   }
+
+   &:hover {
+      background: var(--primary-color);
+      border:  2px solid var(--primary-color);
+  background-image: linear-gradient(to right bottom, #e300ff, #ff00ff, #c156ff, #9900ff, #a200ff);
+  box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+    25px -10px 30px -5px rgba(255, 0, 212, 0.5),
+    25px 10px 30px -5px rgba(162, 0, 255, 0.5),
+    -25px 10px 30px -5px rgba(153, 0, 255, 0.5);
+   }
+}
+
+
+.button_product {
+   width: 40px;
+   height: 40px;
+   border-radius: 5px;
+   background-color: rgba(235, 220, 255, 0.473);
+   border: none;
+   font-weight: 600;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
+   cursor: pointer;
+   transition-duration: 0.3s;
+   overflow: hidden;
+   position: relative;
+}
+
+.svgIcon {
+   width: 12px;
+   transition-duration: 0.3s;
+}
+
+.svgIcon path {
+   stroke: rgb(63, 63, 63);
+}
+
+.button_product:hover {
+   width: 6rem;
+   border-radius: 5px;
+   transition-duration: 0.3s;
+   background-color: var(--primary-color);
+   align-items: center;
+}
+
+.button_product:hover .svgIcon {
+   transition-duration: 0.3s;
+   transform: translateY(-200%);
+}
+
+.button_product::before {
+   position: absolute;
+   bottom: -20px;
+   content: "Sở hữu ngay";
+   color: white;
+   font-size: 0px;
+}
+
+.button_product:hover::before {
+   font-size: 13px;
+   opacity: 1;
+   bottom: unset;
+   transition-duration: 0.3s;
+}

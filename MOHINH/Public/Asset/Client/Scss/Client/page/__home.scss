@@ -1,0 +1,251 @@
+.sec_h_1 {
+   background: var(--color-section);
+
+   .box_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .card {
+      @include card_product(var(--white-opacity-30));
+   }
+}
+
+.sec_h_2 {
+   .container_sec {
+      .evaluate {
+         @include evaluate_icon(linear-gradient(0deg,
+               rgba(154, 33, 212, 1) 0%,
+               rgba(117, 25, 161, 1) 25.99%,
+               rgba(99, 21, 135, 1) 49.11%,
+               rgba(89, 19, 122, 1) 68.70%,
+               rgba(58, 7, 82, 1) 87.29%,
+               rgba(46, 4, 65, 1) 100%),
+            rgba(196, 119, 238, 0.49));
+      }
+
+      .evaluate_item2 {
+         @include evaluate_icon(linear-gradient(0deg,
+               rgba(0, 175.5249997973442, 28.084000423550606, 1) 0%,
+               rgba(0, 124.52499523758888, 19.923999086022377, 1) 50%,
+               rgba(0, 99.02499675750732, 15.843999367207289, 1) 75%,
+               rgba(0, 86.27499371767044, 13.803999032825232, 1) 87.5%,
+               rgba(0, 73.52499827742577, 11.7639996483922, 1) 100%),
+            rgba(124.09983605146408, 255, 91.37499645352364, 0.49000000953674316));
+      }
+
+      .evaluate_item3 {
+         @include evaluate_icon(linear-gradient(0deg,
+               rgba(0, 107.52499625086784, 107.52499625086784, 1) 33.33333432674408%,
+               rgba(0, 120.27499169111252, 120.27499169111252, 1) 50%,
+               rgba(0, 133.0249947309494, 133.0249947309494, 1) 66.66666865348816%,
+               rgba(0, 82.02499777078629, 82.02499777078629, 1) 100%),
+            rgba(88.18749949336052, 204.9562445282936, 255, 0.5));
+      }
+
+      .evaluate_item4 {
+         @include evaluate_icon(linear-gradient(0deg,
+               rgba(121.12498328089714, 0, 109.01248723268509, 1) 75%, rgba(133.87497872114182, 0, 120.48748388886452, 1) 87.5%,
+               rgba(146.6249817609787, 0, 131.96248054504395, 1) 100%),
+            rgba(201.84950083494186, 50.57503916323185, 255, 0.49000000953674316));
+      }
+   }
+
+}
+
+.sec_h_3 {
+   .box_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .card {
+      max-width: 80%;
+      margin: 1% auto;
+      background: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      scroll-behavior: smooth;
+      overflow-x: auto;
+      //   Cho phép cuộn ngang 
+      overscroll-behavior-x: contain;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      //    Ẩn thanh cuộn trên Firefox 
+   }
+
+   //   Ẩn thanh cuộn trên Chrome, Safari 
+   .card::-webkit-scrollbar {
+      display: none;
+   }
+
+   .card_product {
+      position: relative;
+      flex: 0 0 calc(100% / 4);
+      //  Mỗi sản phẩm chiếm 1/4 chiều rộng của container 
+      overflow: hidden;
+      transform-style: preserve-3d;
+      perspective: 1000px;
+      transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+      cursor: pointer;
+      scroll-snap-align: start;
+
+      @include card_Conspicuous(green, rgb(0, 82, 0));
+   }
+
+   .card_2::-webkit-scrollbar {
+      display: none;
+   }
+
+   .card_product {
+      scroll-snap-align: start;
+   }
+}
+
+.sec_h_4 {
+   position: relative;
+   background: var(--color-section);
+
+
+   &::before {
+      position: absolute;
+      content: '';
+      z-index: 0;
+      background: url(/Public/Image/Index/Ellipse.png) no-repeat left bottom 5%,
+         url(/Public/Image/Index/Ellipse.png) no-repeat left 15% center,
+         url(/Public/Image/Index/Ellipse-inline.png) no-repeat right 65% bottom 30%,
+         url(/Public/Image/Index/Ellipse-inline.png) no-repeat top 10% right 35%,
+         url(/Public/Image/Index/Ellipse.png) no-repeat top 26% center,
+         url(/Public/Image/Index/Ellipse.png) no-repeat right 5%,
+         url(/Public/Image/Index/Ellipse.png) no-repeat right 40% bottom 30%;
+      background-size: 4%, 4.5%, 4.5%, 3%, 2%, 5%, 4%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      pointer-events: none; // Để đảm bảo lớp ::before không can thiệp với sự tương tác của người dùng
+   }
+
+   .box_title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   .card {
+      @include card_product(var(--white-opacity-30));
+   }
+
+
+}
+
+.sec_h_5 {
+   overflow: hidden;
+   white-space: nowrap;
+   box-sizing: border-box;
+   //display: flex;
+   align-items: center;
+   width: 100%;
+
+   .marquee-wrapper {
+      display: flex;
+      flex: 1 0 auto; // Cho phép phần tử cuộn tự do
+   }
+
+   .comment_item {
+      margin: 0;
+      position: relative;
+      text-decoration: none;
+      color: var(--white-opacity-80);
+      display: inline-block;
+      padding-left: 105%;
+      padding: .5%;
+      background: var(--black-opacity-30);
+      border-radius: 63px;
+      width: 17rem;
+      white-space: normal; // Allow text to wrap
+      // animation: marquee 15s linear infinite;
+      animation: marquee 5s linear infinite;
+
+      &_use {
+         width: 40%;
+
+         img {
+            border-radius: 50%;
+            width: 100%;
+         }
+      }
+
+      &_name {
+         width: 100%;
+         padding: 1.5%;
+
+         &_use {
+            color: var(--primary-color);
+            font-weight: bold;
+            font-size: var(--font-size);
+         }
+
+         &_comment {
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 2; // Hiển thị tối đa 2 dòng
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.5em;
+            max-height: 3em;
+            font-size: .8rem;
+         }
+      }
+   }
+
+   @keyframes marquee {
+      0% {
+         transform: translateX(0%);
+         transition: .01s;
+      }
+
+      100% {
+         transform: translateX(-100%);
+      }
+   }
+}
+
+.sec_h_6 {
+   .card {
+      @include card_product(var(--white-opacity-30));
+      scroll-behavior: none;
+      overflow-x: none;
+      overscroll-behavior-x: none;
+      scroll-snap-type: none;
+      scrollbar-width: none;
+      flex-wrap: wrap;
+   }
+
+   .view {
+      width: max-content;
+      position: absolute;
+      right: 10%;
+      text-decoration: none;
+      color: var(--white-opacity-80);
+      padding: .5rem 1rem;
+      border-radius: 30px;
+      border: 2px solid var(--primary-color);
+
+      &:hover {
+         color: var(--primary-color);
+         font-weight: 700;
+         box-shadow: -25px -10px 30px -5px rgba(225, 0, 255, 0.5),
+            25px -10px 30px -5px rgba(255, 0, 212, 0.5),
+            25px 10px 30px -5px rgba(162, 0, 255, 0.5),
+            -25px 10px 30px -5px rgba(153, 0, 255, 0.5);
+      }
+   }
+}

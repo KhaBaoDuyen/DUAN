@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="/Public/Image/Index/logomau.png">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/Public/Asset/Client/Scss/Client/index.css">
+</head>
+<title>Bao Duyen Firuge</title>
+</head>
+
+<body>
+   <header>
+      <div class="menu col-10">
+         <a href class="logo col-1"><img src="/Public/Image/Index/logo.png" alt="logo" class></a>
+         <div class="menu-item">
+            <ul>
+               <li><a href="#">Trang chủ</a></li>
+               <li><a href="#">Sản phẩm</a>
+                  <ul class="dropdown">
+                     <li><a href>Danh mục</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">Sắp ra mắt</a></li>
+               <li><a href="#">Liên hệ</a></li>
+               <li><a href="#" class="card-shopping"><img src="/Public/Image/Index/Search.png" alt></a></li>
+
+               <li><a href class="card-shopping"><img src="/Public/Image/Index/Shopping Mall.png" alt><span
+                        class="number-shopping">5</span></a></li>
+               <li>
+                  <a href class="account"> TÀI KHOẢN </a>
+                  <ul class="dropdown">
+                     <li><a href>Thông tin</a></li>
+                     <li><a href>Đăng xuất</a></li>
+                  </ul>
+
+               </li>
+            </ul>
+         </div>
+   </header>
+
+   <nav class="banner_index">
+      <div class="box_text_banner">
+         <div class="box_text">
+            <div class="text_banner">
+               <h1>Đầy đủ,<span class="text_banner_color"> đa dạng</span>,
+                  đáp ứng mọi sở thích </h1>
+            </div>
+            <div class="text_span">Hồi sinh ký ức, thắp sáng đam mê</div>
+            <button class="btn_banner">Sơ hữu ngay</button>
+         </div>
+
+         <div class="clock">
+            <p class="timeStyle" id="timeDisplay"></p>
+         </div>
+
+         <div class="view_analytics">
+            <div class="view_analytics_box">
+               <div class="view_analytics_box_number">180+</div>
+               <div class="view_analytics_box_title">Lượt đánh giá</div>
+            </div>
+
+            <div class="view_analytics_box">
+               <div class="view_analytics_box_number">80+</div>
+               <div class="view_analytics_box_title">Danh mục</div>
+            </div>
+
+            <div class="view_analytics_box">
+               <div class="view_analytics_box_number">280+</div>
+               <div class="view_analytics_box_title">Sản phẩm</div>
+            </div>
+         </div>
+      </div>
+      <div class="elip">
+         <div class="img_slide"></div>
+         <!-- <img src="/Public/Image/Index/snapedit_1724336800044 1.png" alt=""> -->
+      </div>
+   </nav>
+   <main class="container">
+      <section class="sec_h_1">
+         <div class="box_title container_sec">
+            <h5>Sản phẩm bán chạy nhất</h5>
+            <div class="box_btn_slide d-flex">
+               <button type="submit" class="btn_slide" id="prewButton" title="Previous"><span
+                     class="material-symbols-outlined">
+                     arrow_back_ios_new
+                  </span></button>
+               <button type="submit" class="btn_slide" id="nextButton" title="Next"><span
+                     class="material-symbols-outlined">
+                     arrow_forward_ios
+                  </span></button>
+            </div>
+         </div>
+
+         <div class="card container_sec p-4" id="card">
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+
+      </section>
+
+      <section class="sec_h_2">
+         <div class="container_sec d-flex  text-center">
+            <div class="evaluate m-1 ">
+               <div class="evaluate_img">
+                  <img src="/Public/Image/Index/Guarantee.png" alt>
+               </div>
+               <div class="evaluate_content">
+                  <p>Cam kết cung cấp sản phẩm, vượt qua kỳ vọng của khách
+                     hàng.</p>
+               </div>
+            </div>
+
+            <div class="evaluate_item2 m-1">
+               <div class="evaluate_img">
+                  <img src="/Public/Image/Index/Handshake.png" alt>
+               </div>
+               <div class="evaluate_content">
+                  <p>Cam kết giải quyết mọi vấn đề phát sinh nhanh chóng,
+                     hiệu quả..</p>
+               </div>
+            </div>
+
+            <div class="evaluate_item3 m-1">
+               <div class="evaluate_img">
+                  <img src="/Public/Image/Index/Trust.png" alt>
+               </div>
+               <div class="evaluate_content">
+                  <p>Xây dựng lòng tin thông qua dịch vụ chuyên nghiệp..</p>
+               </div>
+            </div>
+
+            <div class="evaluate_item4 m-1">
+               <div class="evaluate_img d-flex justify-content-center align-content-center">
+                  <img src="/Public/Image/Index/UserShield.png" alt>
+               </div>
+               <div class="evaluate_content">
+                  <p>Cam kết bảo mật tuyệt đối thông tin cá nhân của khách
+                     hàng..</p>
+               </div>
+            </div>
+
+         </div>
+      </section>
+
+      <section class="sec_h_3">
+         <div class="box_title container_sec">
+            <h5>Môt số nhân vật nổi bật</h5>
+            <div class="box_btn_slide d-flex">
+               <button type="submit" class="btn_slide" id="prewButton2" title="Previous"><span
+                     class="material-symbols-outlined">
+                     arrow_back_ios_new
+                  </span></button>
+               <button type="submit" class="btn_slide" id="nextButton2" title="Next"><span
+                     class="material-symbols-outlined">
+                     arrow_forward_ios
+                  </span></button>
+            </div>
+         </div>
+
+         <div class="card p-4" id="card_2">
+
+            <div class="card_product">
+               <div class="card_product_item">
+                  <img src="/Public/Image/Product/pro2.png" alt>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="box_card_item_opactity" width="100%"
+                     viewBox="0 0 313 191" fill="none">
+                     <path
+                        d="M0.903809 8.61352C0.903809 4.19524 4.48553 0.613525 8.90381 0.613525H161.97C164.066 0.613525 166.079 1.43664 167.575 2.90574L216.421 50.8759C217.917 52.345 219.93 53.1681 222.027 53.1681H304.12C308.538 53.1681 312.12 56.7499 312.12 61.1681V183C312.12 187.418 308.538 191 304.12 191H8.90382C4.48554 191 0.903809 187.418 0.903809 183V8.61352Z"
+                        fill="#393939" fill-opacity="0.6" />
+
+                     <foreignobject x="10" y="10" width="293" height="171">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="box_card_item_text">
+                           <p class="box_card_item_title">Mokey D.Lucffy</p>
+                           <p class="box_card_item_description">Luffy, với
+                              chiếc mũ rơm trên đầu, luôn mang trong mình
+                              ước mơ trở thành Vua Hải Tặc vĩ đại nhất thế
+                              giới. Cậu sẵn sàng đối mặt với mọi khó khăn,
+                              thử thách để đạt được mục tiêu của mình.</p>
+                        </div>
+                     </foreignobject>
+                  </svg>
+
+               </div>
+            </div>
+
+            <div class="card_product">
+               <div class="card_product_item">
+                  <img src="/Public/Image/Product/pro2.png" alt>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="box_card_item_opactity" width="100%"
+                     viewBox="0 0 313 191" fill="none">
+                     <path
+                        d="M0.903809 8.61352C0.903809 4.19524 4.48553 0.613525 8.90381 0.613525H161.97C164.066 0.613525 166.079 1.43664 167.575 2.90574L216.421 50.8759C217.917 52.345 219.93 53.1681 222.027 53.1681H304.12C308.538 53.1681 312.12 56.7499 312.12 61.1681V183C312.12 187.418 308.538 191 304.12 191H8.90382C4.48554 191 0.903809 187.418 0.903809 183V8.61352Z"
+                        fill="#393939" fill-opacity="0.6" />
+
+                     <foreignobject x="10" y="10" width="293" height="171">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="box_card_item_text">
+                           <p class="box_card_item_title">Mokey D.Lucffy</p>
+                           <p class="box_card_item_description">Luffy, với
+                              chiếc mũ rơm trên đầu, luôn mang trong mình
+                              ước mơ trở thành Vua Hải Tặc vĩ đại nhất thế
+                              giới. Cậu sẵn sàng đối mặt với mọi khó khăn,
+                              thử thách để đạt được mục tiêu của mình.</p>
+                        </div>
+                     </foreignobject>
+                  </svg>
+
+               </div>
+            </div>
+
+            <div class="card_product">
+               <div class="card_product_item">
+                  <img src="/Public/Image/Product/pro2.png" alt>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="box_card_item_opactity" width="100%"
+                     viewBox="0 0 313 191" fill="none">
+                     <path
+                        d="M0.903809 8.61352C0.903809 4.19524 4.48553 0.613525 8.90381 0.613525H161.97C164.066 0.613525 166.079 1.43664 167.575 2.90574L216.421 50.8759C217.917 52.345 219.93 53.1681 222.027 53.1681H304.12C308.538 53.1681 312.12 56.7499 312.12 61.1681V183C312.12 187.418 308.538 191 304.12 191H8.90382C4.48554 191 0.903809 187.418 0.903809 183V8.61352Z"
+                        fill="#393939" fill-opacity="0.6" />
+
+                     <foreignobject x="10" y="10" width="293" height="171">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="box_card_item_text">
+                           <p class="box_card_item_title">Mokey D.Lucffy</p>
+                           <p class="box_card_item_description">Luffy, với
+                              chiếc mũ rơm trên đầu, luôn mang trong mình
+                              ước mơ trở thành Vua Hải Tặc vĩ đại nhất thế
+                              giới. Cậu sẵn sàng đối mặt với mọi khó khăn,
+                              thử thách để đạt được mục tiêu của mình.</p>
+                        </div>
+                     </foreignobject>
+                  </svg>
+
+               </div>
+            </div>
+
+            <div class="card_product">
+               <div class="card_product_item">
+                  <img src="/Public/Image/Product/pro2.png" alt>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="box_card_item_opactity" width="100%"
+                     viewBox="0 0 313 191" fill="none">
+                     <path
+                        d="M0.903809 8.61352C0.903809 4.19524 4.48553 0.613525 8.90381 0.613525H161.97C164.066 0.613525 166.079 1.43664 167.575 2.90574L216.421 50.8759C217.917 52.345 219.93 53.1681 222.027 53.1681H304.12C308.538 53.1681 312.12 56.7499 312.12 61.1681V183C312.12 187.418 308.538 191 304.12 191H8.90382C4.48554 191 0.903809 187.418 0.903809 183V8.61352Z"
+                        fill="#393939" fill-opacity="0.6" />
+
+                     <foreignobject x="10" y="10" width="293" height="171">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="box_card_item_text">
+                           <p class="box_card_item_title">Mokey D.Lucffy</p>
+                           <p class="box_card_item_description">Luffy, với
+                              chiếc mũ rơm trên đầu, luôn mang trong mình
+                              ước mơ trở thành Vua Hải Tặc vĩ đại nhất thế
+                              giới. Cậu sẵn sàng đối mặt với mọi khó khăn,
+                              thử thách để đạt được mục tiêu của mình.</p>
+                        </div>
+                     </foreignobject>
+                  </svg>
+
+               </div>
+            </div>
+
+            <div class="card_product">
+               <div class="card_product_item">
+                  <img src="/Public/Image/Product/pro2.png" alt>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="box_card_item_opactity" width="100%"
+                     viewBox="0 0 313 191" fill="none">
+                     <path
+                        d="M0.903809 8.61352C0.903809 4.19524 4.48553 0.613525 8.90381 0.613525H161.97C164.066 0.613525 166.079 1.43664 167.575 2.90574L216.421 50.8759C217.917 52.345 219.93 53.1681 222.027 53.1681H304.12C308.538 53.1681 312.12 56.7499 312.12 61.1681V183C312.12 187.418 308.538 191 304.12 191H8.90382C4.48554 191 0.903809 187.418 0.903809 183V8.61352Z"
+                        fill="#393939" fill-opacity="0.6" />
+
+                     <foreignobject x="10" y="10" width="293" height="171">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="box_card_item_text">
+                           <p class="box_card_item_title">Mokey D.Lucffy</p>
+                           <p class="box_card_item_description">Luffy, với
+                              chiếc mũ rơm trên đầu, luôn mang trong mình
+                              ước mơ trở thành Vua Hải Tặc vĩ đại nhất thế
+                              giới. Cậu sẵn sàng đối mặt với mọi khó khăn,
+                              thử thách để đạt được mục tiêu của mình.</p>
+                        </div>
+                     </foreignobject>
+                  </svg>
+
+               </div>
+            </div>
+
+            <div class="card_product">
+               <div class="card_product_item">
+                  <img src="/Public/Image/Product/pro2.png" alt>
+
+                  <svg xmlns="http://www.w3.org/2000/svg" class="box_card_item_opactity" width="100%"
+                     viewBox="0 0 313 191" fill="none">
+                     <path
+                        d="M0.903809 8.61352C0.903809 4.19524 4.48553 0.613525 8.90381 0.613525H161.97C164.066 0.613525 166.079 1.43664 167.575 2.90574L216.421 50.8759C217.917 52.345 219.93 53.1681 222.027 53.1681H304.12C308.538 53.1681 312.12 56.7499 312.12 61.1681V183C312.12 187.418 308.538 191 304.12 191H8.90382C4.48554 191 0.903809 187.418 0.903809 183V8.61352Z"
+                        fill="#393939" fill-opacity="0.6" />
+
+                     <foreignobject x="10" y="10" width="293" height="171">
+                        <div xmlns="http://www.w3.org/1999/xhtml" class="box_card_item_text">
+                           <p class="box_card_item_title">Mokey D.Lucffy</p>
+                           <p class="box_card_item_description">Luffy, với
+                              chiếc mũ rơm trên đầu, luôn mang trong mình
+                              ước mơ trở thành Vua Hải Tặc vĩ đại nhất thế
+                              giới. Cậu sẵn sàng đối mặt với mọi khó khăn,
+                              thử thách để đạt được mục tiêu của mình.</p>
+                        </div>
+                     </foreignobject>
+                  </svg>
+
+               </div>
+            </div>
+
+         </div>
+
+      </section>
+
+      <section class="sec_h_4">
+         <div class="box_title container_sec">
+            <h5>Sản phẩm giảm giá</h5>
+
+            <div class="box_btn_slide d-flex ">
+               <button type="submit" class="btn_slide" id="prewButton3" title="Previous"><span
+                     class="material-symbols-outlined">
+                     arrow_back_ios_new
+                  </span></button>
+               <button type="submit" class="btn_slide" id="nextButton3" title="Next"><span
+                     class="material-symbols-outlined">
+                     arrow_forward_ios
+                  </span></button>
+            </div>
+         </div>
+         <div class="card p-4 container_sec " id="card_3" >
+         
+                <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+       <!-- giamr giá -->
+                <div class="discount">
+50%
+</div>
+               </div>
+            </a>
+         
+                <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+       <!-- giamr giá -->
+                <div class="discount">
+50%
+</div>
+               </div>
+            </a>
+         
+                <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+       <!-- giamr giá -->
+                <div class="discount">
+50%
+</div>
+               </div>
+            </a>
+         
+                <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+       <!-- giamr giá -->
+                <div class="discount">
+50%
+</div>
+               </div>
+            </a>
+         
+                <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+       <!-- giamr giá -->
+                <div class="discount">
+50%
+</div>
+               </div>
+            </a>
+         
+                <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+       <!-- giamr giá -->
+                <div class="discount">
+50%
+</div>
+               </div>
+            </a>
+
+         </div>
+
+      </section>
+
+      <section class="sec_h_5 container_sec marquee-container d-flex">
+         <div class="marquee-wrapper d-flex">
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+         </div>
+
+         <div class="marquee-wrapper marquee-wrapper-left d-flex">
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+            <!-- Thêm nhiều phần tử comment_item tương tự như trên -->
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+
+            <a class="comment_item d-flex justify-content-start align-items-center m-2">
+               <div class="comment_item_use">
+                  <img src="/Public/Image/User/41dfaa16e9f15c57797951e518978057.jpg" alt="ảnh đại diện">
+               </div>
+               <div class="comment_item_name">
+                  <span class="comment_item_name_use">Use name</span> <br>
+                  <span class="comment_item_name_comment">sản phẩm rất là ok và tốt nữa ản phẩm rất là ok và tốt nữa rất
+                     là ok và tốt nữa</span>
+               </div>
+            </a>
+         </div>
+      </section>
+
+      <section class="sec_h_6 container_sec ">
+         <div class="box_title ">
+            <h5>Sản phẩm bán chạy nhất</h5>
+         </div>
+
+         <div class="card p-4" id="card">
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+            <a class="card_product">
+               <div class="card_product_content ">
+                  <div class="card_product_img">
+                     <img src="/Public/Image/Product/pro1.png" alt>
+                  </div>
+                  <div class="card_product_content_box d-flex justify-content-between align-content-end">
+                     <p class="card_product_content_box_name"> Roronoa Zoro -
+                        Eano Country</p>
+                     <h4>$45.5</h4>
+                  </div>
+                  <div class="card_product_content_title d-flex  align-items-center justify-content-between">
+                     <div class="card_product_content_title_cate d-flex justify-content-start align-items-center ">
+                        <img src="/Public/Image/Category/cate1.png" alt>
+                        <p class="text_categogy " height="100%">
+                           <span>nhà cung cấp</span> <br>
+                           <span>Banda</span>
+                        </p>
+                     </div>
+                     <button title="Mua" class="button_product">
+                        <svg width="100" class="svgIcon" height="100" viewBox="0 0 100 100">
+                           <path d="M 50 10 L 50 90 M 10 50 L 90 50" stroke-width="5" />
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+            </a>
+
+         </div>
+         <a class="view d-flex justify-content-end" href=""> Xem thêm <span class="material-symbols-outlined">
+arrow_forward
+</span></a>
+      </section>
+   </main>
+</body>
+<script src="/Public/Asset/Client/Js/slide-banner.js"></script>
+<script src="/Public/Asset/Client/Js/clock.js"></script>
+
+</html>

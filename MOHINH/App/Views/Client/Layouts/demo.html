@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân trang</title>
+    <style>
+        .product { display: none; }
+        .active { display: block; }
+    </style>
+</head>
+<body>
+    <div id="products">
+        <!-- Giả sử có 30 sản phẩm -->
+        <div class="product">Sản phẩm 1</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 3</div>
+        <div class="product">Sản phẩm 5</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 3</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 5</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 6</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 7</div>
+        <div class="product">Sản phẩm 2</div>
+        <div class="product">Sản phẩm 2</div>
+        <!-- Thêm các sản phẩm khác -->
+        <div class="product">Sản phẩm 30</div>
+    </div>
+    <div id="pagination"></div>
+    <script >
+document.addEventListener("DOMContentLoaded", function() {
+    const products = document.querySelectorAll('.product');
+    const productsPerPage = 10;
+    const totalPages = Math.ceil(products.length / productsPerPage);
+    const pagination = document.getElementById('pagination');
+
+    function showPage(page) {
+        products.forEach((product, index) => {
+            product.classList.remove('active');
+            if (index >= (page - 1) * productsPerPage && index < page * productsPerPage) {
+                product.classList.add('active');
+            }
+        });
+    }
+
+    function createPagination() {
+        for (let i = 1; i <= totalPages; i++) {
+            const pageLink = document.createElement('a');
+            pageLink.href = "#";
+            pageLink.textContent = i;
+            pageLink.addEventListener('click', function(e) {
+                e.preventDefault();
+                showPage(i);
+            });
+            pagination.appendChild(pageLink);
+        }
+    }
+
+    createPagination();
+    showPage(1); // Hiển thị trang đầu tiên
+});
+
+</script>
+</body>
+</html>
